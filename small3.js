@@ -13,15 +13,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/greet/:name', (req, res) => {
-  res.send(`"Hello,${req.params.name}!"`);
+  res.send(`<h2>"Hello,${req.params.name}!"<h2>`);
 });
-
-// app.get('/greet/Ahsoka', (req, res) => {
-//   res.send('<h2>"Hello,Ahsoka!"<h2>');
-// });
-// app.get('/greet/Han', (req, res) => {
-//   res.send('<h2>"Hello,Han!"<h2>');
-// });
 
 server.listen(port, hostname, () => {
   // once server is listening, log to the console to say so
